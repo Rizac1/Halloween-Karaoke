@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+
+    <div class="main-page">
+        <button onClick="dropDownMenu()" class="dropbtn" >Song Selection</button>
+        <div id="dropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="?song=thisishalloween">This Is Halloween</a>
+            <a href="?song=spookyscary">Spooky Scary Skeletons</a>
+        </div>
+        <p id='main-p'>Hello and welcome to the Halloween select a song.</p>
+        <p id='main-p'>Pick and song and play it.<br> You can even sing along.</p>
+    </div>
+
+    <div id="songbox">
+        <button id = "start" onClick="getReady()">Play the song </button>
+        <h1 id="song2"></h1>
+        <p id="song1"></p>
+        <audio id="halloween"></audio>
+    </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script/thisishalloween.js"></script>
+</body>
+</html>

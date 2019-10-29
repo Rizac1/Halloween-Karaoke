@@ -61,10 +61,12 @@ if ($_GET['song'] == 'thisishalloween') {
     { data: "Sticks and stones will break your bones", time: 3000 }, { data: "They seldom let you snooze", time: 3000 }, { data: "Spooky scary skeletons", time: 3000 },
     { data: "Will wake you with a boo!", time: 3000 }]
 
-    startTime = 12000;
-    backgroundImage = './css/spookybois.jpg';
+    startTime = 120;
+    backgroundImage = './css/test.jpg';
     title = 'Spooky Scary Skeletons';
     audio.src = 'audio/Andrew Gold - Spooky Scary Skeletons.mp3';
+    document.getElementById('song1').style.color = "white";
+    document.getElementById('song2').style.color = "white";
 
 } else if ($_GET['song'] == 'newsong') {
 
@@ -76,8 +78,6 @@ if ($_GET['song'] == 'thisishalloween') {
 
 } else {
     document.getElementById('songbox').style.display = 'none';
-    document.getElementById('song1').style.color = "black";
-    document.getElementById('song2').style.color = "black";
     title = 'Halloween Fun';
 }
 

@@ -79,6 +79,11 @@ if ($_GET['song'] == 'thisishalloween') {
 } else {
     document.getElementById('songbox').style.display = 'none';
     title = 'Halloween Fun';
+    // var para = document.createElement("P");
+    // para.innerText = "Hello and welcome to the Halloween Fun select a song to begin"
+    // document.getElementById("para").appendChild(para);
+    let para = document.getElementById("para");
+    para.innerHTML = "<p id='para'>Hello and welcome to the Halloween Fun select a song to begin</p><p id='para'>Pick a song and play it.<br> You can even sing along.</p>"
 }
 
 document.body.style.backgroundImage = "url('" + backgroundImage + "')";
